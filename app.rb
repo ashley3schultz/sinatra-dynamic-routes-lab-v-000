@@ -8,7 +8,6 @@ class App < Sinatra::Base
 
   get '/square/:number' do
     n = params[:number].to_i
-    binding.pry
     (1..n).detect {|s| n / s == s || n / s == n}
 
   end
