@@ -7,7 +7,7 @@ class App < Sinatra::Base
   end
 
   get '/square/:number' do
-    "#{params[:number] * params[:number]}"
+    "#{params[:number].to_i * params[:number].to_i}"
     #@n = params[:number].to_i
     #(1..100).find {|s| @n / s == s}.to_s
     #binding.pry
