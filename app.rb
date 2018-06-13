@@ -9,6 +9,7 @@ class App < Sinatra::Base
   get '/square/:number' do
     @n = params[:number].to_i
     @sum = (1..100).find {|s| @n / s == s}
+    binding.pry
     "#{@sum.to_s}"
 
   end
