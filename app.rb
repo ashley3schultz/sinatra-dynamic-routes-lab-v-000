@@ -8,7 +8,7 @@ class App < Sinatra::Base
 
   get '/square/:number' do
     n = params[:number].to_i
-    (1..n).detect {|s| s * s == n}
+    (1..n).detect {|s| n / s == s}
 
   end
   # Write your code here!
