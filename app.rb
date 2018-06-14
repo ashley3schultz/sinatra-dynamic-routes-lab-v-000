@@ -26,7 +26,7 @@ class App < Sinatra::Base
     @n1 = params[:number1].to_i
     @n2 = params[:number2].to_i
     if @o == "add"
-      @resault = (@n1 + @n2
+      @resault = @n1 + @n2
     elsif @o == "subtract"
       @resault = @n1 - @n2
     elsif @o == "divide"
