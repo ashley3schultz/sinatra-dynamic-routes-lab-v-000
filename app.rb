@@ -35,6 +35,7 @@ class App < Sinatra::Base
       @resault = (@n1 * @n2)
     end
     @resault
+    binding.pry
   end
 
 end
