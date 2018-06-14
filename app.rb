@@ -12,17 +12,17 @@ class App < Sinatra::Base
   end
 
   get '/say/:number/:phrase' do
-    params[:number].to_i.times do
-      puts "#{params[:phrase]}"
-    end
+    @p = params[:phrase]
+    @n = params[:number].to_i
+    @n.times { "#{@p}" }
   end
 
   get '/:operation/:number1/:number2' do
-
+    
   end
 
-  get '/say/:word1/:word2/:word3/:word4/:word5' do
-
-  end
+  get '/say/:word1/:word2/:word3/:word4/:word5' do 
+    
+  end 
 
 end
