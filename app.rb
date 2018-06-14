@@ -28,11 +28,11 @@ class App < Sinatra::Base
     if @o == "add"
       @resault = @n1 += @n2
     elsif @o == "subtract"
-      @resault = (@n1 =- @n2)
+      @resault = @n1 -= @n2
     elsif @o == "divide"
-      @resault = (@n1 / @n2)
+      @resault = @n1 / @n2
     else
-      @resault = (@n1 * @n2)
+      @resault = @n1 * @n2
     end
     @resault
     binding.pry
