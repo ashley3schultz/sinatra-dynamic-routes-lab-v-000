@@ -9,11 +9,11 @@ class App < Sinatra::Base
   get '/square/:number' do
     @sum = (params[:number].to_i * params[:number].to_i)
     @sum.to_s
-    #@n = params[:number].to_i
-    #(1..100).find {|s| @n / s == s}.to_s
-    #binding.pry
-
   end
+
+  get 'say/:number/:phrase' do 
+    params[:number].times "#{params[:phrase]}"
+  end 
   # Write your code here!
 
 end
