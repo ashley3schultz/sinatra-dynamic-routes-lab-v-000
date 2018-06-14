@@ -11,7 +11,7 @@ class App < Sinatra::Base
     @sum.to_s
   end
 
-  get 'say/:number/:phrase' do
+  get '/say/:number/:phrase' do
     @n = params[:number].to_i
     #binding.pry
     n.times do
