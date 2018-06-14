@@ -22,8 +22,19 @@ class App < Sinatra::Base
   end
 
   get '/:operation/:number1/:number2' do
-    binding.pry
-
+    @o = params[:operation]
+    @n1 = params[:number1]
+    @n2 = params[:number2]
+    if @o == "add"
+      @resault = (@n1 + @n2)
+    elsif @o == "subtract"
+      @resault = (@n1 - @n2)
+    elsif @o == "divide"
+      @resault = (@n1 / @n2)
+    else 
+      @resault = (@n1 * @n2)
+    end 
+    @resault
   end
 
 end
