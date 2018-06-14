@@ -17,11 +17,12 @@ class App < Sinatra::Base
     @n.times { "#{@p}" }
   end
 
-  get '/:operation/:number1/:number2' do
+  get '/say/:word1/:word2/:word3/:word4/:word5' do
 
   end
 
-  get '/say/:word1/:word2/:word3/:word4/:word5' do
+  get '/:operation/:number1/:number2' do
+    binding.pry
 
   end
 
