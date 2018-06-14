@@ -31,9 +31,9 @@ class App < Sinatra::Base
       @resault = (@n1 - @n2)
     elsif @o == "divide"
       @resault = (@n1 / @n2)
-    else 
+    else
       @resault = (@n1 * @n2)
-    end 
+    end
     @resault
   end
 
