@@ -11,9 +11,9 @@ class App < Sinatra::Base
     @sum.to_s
   end
 
-  get 'say/:number/:phrase' do 
+  get 'say/:number/:phrase' do
     params[:number].times "#{params[:phrase]}"
-  end 
+  end
   # Write your code here!
 
 end
